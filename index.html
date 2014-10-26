@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="MMORPG framework that's built using C++, and using a back-end of MySQL for the DB content">
+    <meta name="author" content="ShinDarth">
+
+    <title>TrinityCore</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img class="img-responsive" src="images/logo.png" width="185px"></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="https://www.ohloh.net/p/TrinityCore" class="navbar-img"><img class="img-responsive" src="images/TrinityCore_Ohloh_logo.png" width="45px"></a></li>
+            <li><a href="http://github.com/TrinityCore/TrinityCore/zipball/master" class="navbar-img"><img class="img-responsive" src="images/zip.png" width="45px"></a></li>
+            <li><a href="http://github.com/TrinityCore/TrinityCore/tarball/master" class="navbar-img"><img class="img-responsive" src="images/tar.png" width="45px"></a></li>
+            <li><a href="http://www.trinitycore.info/" class="navbar-img"><img class="img-responsive" src="images/wiki-icon.gif" width="45px"></a></li>
+            <li><a href="https://github.com/TrinityCore/TrinityCore/issues" class="navbar-img"><img class="img-responsive" src="images/bugtracker.png" width="45px"></a></li>
+          </ul>
+          <form class="navbar-form navbar-right visible-lg" role="form" method="POST" action="http://www.trinitycore.org/f/index.php?app=core&module=global&section=login&do=process">
+            <input type="hidden" value="880ea6a14ea49e853634fbdc5015a024" name="auth_key">
+            <input type="hidden" value="http://www.trinitycore.org/f/" name="referer">
+            <div class="form-group">
+              <input name="ips_username" type="text" placeholder="Username" class="form-control">
+            </div>
+            <div class="form-group">
+              <input name="ips_password" type="password" placeholder="Password" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-success">Sign in</button>
+            <a href="http://www.trinitycore.org/f/index.php?app=core&module=global&section=register"><button class="btn btn-primary">Register</button></a>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="jumbotron">
+      <div class="container">
+        <div class="text-right hidden-xs">
+          <a href="https://mariadb.org/"><img src="images/logo-mariadb1.png"></a>
+          <a href="https://www.mozilla.org/"><img src="images/logo-firefox.png"></a>
+          <a href="http://www.google.com/chrome/"><img src="images/logo-chrome.png"></a>
+          <a href="http://www.ubuntu.com/"><img src="images/logo-ubuntu.png"></a>
+          <a href="https://github.com/"><img src="images/logo-github.png"></a>
+        </div>
+        <p class="text-center h1"><img src="images/logo2.png">TrinityCore</p>
+        <p class="text-justify">TrinityCore is an MMORPG framework that's built using C++, and using a back-end of MySQL for the DB content. Trinity was at one point a merger of MaNGOS with many patches submitted by users, that is no longer the case. Trinity is an individual project with a diverse development team, We love to hear from our users too, whether you want to give words of encouragment or <strong>if you have code for us to merge into the repo (please <a href="https://github.com/TrinityCore/TrinityCore/pulls">file a pull request</a> if you do, we love it when users contribute :) )</strong>. Trinity has been cleaned up a lot, and will continue to be cleaned up and optimized over time. Please help us by posting issues, patches, and enhancement suggestions on the tracker.</p>
+        <p class="text-justify">Trinity Core is <strong>free software</strong>; you can redistribute it and/or modify it under the terms of the <a href="http://www.gnu.org/licenses/gpl-2.0.txt">GNU General Public License</a> as published by the <a href="http://www.fsf.org/">Free Software Foundation</a>; version 2 of the License.</p>
+        <p class="text-center">
+          <a href="http://www.trinitycore.org/f" class="btn btn-primary btn-lg btn-margin" role="button">Community Support Forum &raquo;</a>
+          <a href="http://www.trinitycore.info/" class="btn btn-success btn-lg btn-margin" role="button">How to Compile &raquo;</a>
+          <a href="http://doc.trinitycore.info/" class="btn btn-info btn-lg btn-margin" role="button">Automated Documentation &raquo;</a>
+          <a href="http://github.com/TrinityCore/TrinityCore/blob/master/THANKS" class="btn btn-warning btn-lg btn-margin" role="button">Contributors &raquo;</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h2>6.x Commits</h2>
+          <div id="tc-commits-6" class="tc-commits"></div>
+          <p><a class="btn btn-default" href="https://github.com/TrinityCore/TrinityCore/tree/6.x" role="button"><img width="16px" src="images/GitHub-Mark-32px.png">&nbsp;View details &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>4.3.4 Commits</h2>
+          <div id="tc-commits-4" class="tc-commits"></div>
+          <p><a class="btn btn-default" href="https://github.com/TrinityCore/TrinityCore/tree/4.3.4" role="button"><img width="16px" src="images/GitHub-Mark-32px.png">&nbsp;View details &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>3.3.5 Commits</h2>
+          <div id="tc-commits-3" class="tc-commits"></div>
+          <p><a class="btn btn-default" href="https://github.com/TrinityCore/TrinityCore/tree/3.3.5" role="button"><img width="16px" src="images/GitHub-Mark-32px.png">&nbsp;View details &raquo;</a></p>
+        </div>
+      </div>
+
+      <hr>
+
+      <footer>
+        <p class="small text-center">Designed for <strong>TrinityCore</strong> by <a href="https://github.com/ShinDarth">ShinDarth</a></p>
+      </footer>
+    </div>
+
+    <a class="hidden-xs" href="https://github.com/TrinityCore/TrinityCore"><img style="position: absolute; top: 51px; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/githubinfowidget.js"></script>
+    <script>
+      $(function() {
+        $('#tc-commits-6').githubInfoWidget(
+          { user: 'TrinityCore', repo: 'TrinityCore', branch: '6.x', last: 5, limitMessageTo: 60 });
+      });
+
+      $(function() {
+        $('#tc-commits-4').githubInfoWidget(
+          { user: 'TrinityCore', repo: 'TrinityCore', branch: '4.3.4', last: 5, limitMessageTo: 60 });
+      });
+
+      $(function() {
+        $('#tc-commits-3').githubInfoWidget(
+          { user: 'TrinityCore', repo: 'TrinityCore', branch: '3.3.5', last: 5, limitMessageTo: 60 });
+      });
+    </script>
+  </body>
+</html>
