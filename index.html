@@ -79,17 +79,12 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-6">
           <h2>6.x Commits</h2>
           <div id="tc-commits-6" class="tc-commits"></div>
           <p><a class="btn btn-default" href="https://github.com/TrinityCore/TrinityCore/tree/6.x" role="button"><img width="16px" src="images/GitHub-Mark-32px.png">&nbsp;View details &raquo;</a></p>
         </div>
-        <div class="col-md-4">
-          <h2>4.3.4 Commits</h2>
-          <div id="tc-commits-4" class="tc-commits"></div>
-          <p><a class="btn btn-default" href="https://github.com/TrinityCore/TrinityCore/tree/4.3.4" role="button"><img width="16px" src="images/GitHub-Mark-32px.png">&nbsp;View details &raquo;</a></p>
-        </div>
-        <div class="col-md-4">
+        <div class="col-md-6">
           <h2>3.3.5 Commits</h2>
           <div id="tc-commits-3" class="tc-commits"></div>
           <p><a class="btn btn-default" href="https://github.com/TrinityCore/TrinityCore/tree/3.3.5" role="button"><img width="16px" src="images/GitHub-Mark-32px.png">&nbsp;View details &raquo;</a></p>
@@ -112,11 +107,6 @@
       $(function() {
         $('#tc-commits-6').githubInfoWidget(
           { user: 'TrinityCore', repo: 'TrinityCore', branch: '6.x', last: 5, limitMessageTo: 60 });
-      });
-
-      $(function() {
-        $('#tc-commits-4').githubInfoWidget(
-          { user: 'TrinityCore', repo: 'TrinityCore', branch: '4.3.4', last: 5, limitMessageTo: 60 });
       });
 
       $(function() {
