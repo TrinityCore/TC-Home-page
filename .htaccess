@@ -1,0 +1,10 @@
+# for nginx :
+# rewrite ^/f/(.*)$ http://community.trinitycore.org/$1? permanent;
+#
+
+# for Apache
+# 
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} ^www\.trinitycore\.org  [NC]
+RewriteRule ^f/(.*)  http://community.trinitycore.org/$1 [R=301,NC,L]
